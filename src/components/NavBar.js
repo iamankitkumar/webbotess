@@ -70,11 +70,11 @@ function NavBar() {
 
             {click ? (
               <span className="icon">
-                <HamburgetMenuOpen />{" "}
+                <HamburgetMenuClose />{" "}
               </span>
             ) : (
               <span className="icon">
-                <HamburgetMenuClose />
+                <HamburgetMenuOpen />
               </span>
             )}
           </div>
