@@ -5,6 +5,7 @@ import Home from './components/Pages/Home';
 import About from './components/Pages/About';
 import Blog from './components/Pages/Blog';
 import Contact from './components/Pages/Contact';
+import Mca from "./components/Courses/Mca";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/about" element={<About/>} />
         <Route path="/blog" element={<Blog/>} />
         <Route path="/contact" element={<Contact/>} />
+        <Route path="/mca" element={<Mca/>} />
         </Routes>
       </div>
   

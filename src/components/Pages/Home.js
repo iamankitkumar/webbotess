@@ -1,6 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Home.css'
+import { useNavigate } from 'react-router-dom'
+import axios from 'axios';
 const Home = () => {
+  const navigate = useNavigate();
+  const mcaPage = ()=>{
+    navigate('/mca');
+  }
+
+  useEffect (() =>{
+    axios.get('http://localhost:3001/Course-card').then(res =>{
+      console.log(res.data);
+    }) 
+  },[])
+
   return (
     <div>
 
@@ -15,7 +28,7 @@ const Home = () => {
         <div className="card_content">
           <h2 className="card_title">Card Grid Layout</h2>
           <p className="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-          <button className="btn card_btn">Read More</button>
+          <button className="btn card_btn">MCA</button>
         </div>
       </div>
     </li>
