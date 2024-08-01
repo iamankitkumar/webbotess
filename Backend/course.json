@@ -1,32 +1,51 @@
 [
   {
+    "id": 1,
     "title": "Master of Computer Application",
     "image": "https://imgs.search.brave.com/cU4tCweiWzs3p52Fl1WOKTFhcv7gKA2t4urxuamaBws/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzAwLzgyLzMw/LzM2MF9GXzUwMDgy/MzA1Nl9QamdzY1ZX/Qk05d3hyNzdZYlR0/ZWdlS0ptYWlQb0Va/Zy5qcGc",
-    "description": "This is a brief description of the course."
+    "description": "This is a brief description of the course.",
+    "button": "MCA"
   },
   {
+    "id": 2,
     "title": "Bachelor of Science in Computer Science",
     "image": "https://t3.ftcdn.net/jpg/05/31/08/72/360_F_531087216_GwBkAkrPIlXiuJRcJajovnrivUiyPdTf.jpg",
-    "description": "An undergraduate program focusing on computer science fundamentals."
+    "description": "An undergraduate program focusing on computer science fundamentals.",
+    "button": "MMS"
   },
   {
+    "id": 7,
+    "title": "BSC(CS)",
+    "image": "https://imgs.search.brave.com/cU4tCweiWzs3p52Fl1WOKTFhcv7gKA2t4urxuamaBws/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzAwLzgyLzMw/LzM2MF9GXzUwMDgy/MzA1Nl9QamdzY1ZX/Qk05d3hyNzdZYlR0/ZWdlS0ptYWlQb0Va/Zy5qcGc",
+    "description": "Deep dive into AI and ML technologies and their applications focusing on computer science fundamentals.",
+    "button": "BSC(CS)"
+  },
+  {
+    "id": 3,
     "title": "Data Science and Analytics",
     "image": "https://imgs.search.brave.com/cU4tCweiWzs3p52Fl1WOKTFhcv7gKA2t4urxuamaBws/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzAwLzgyLzMw/LzM2MF9GXzUwMDgy/MzA1Nl9QamdzY1ZX/Qk05d3hyNzdZYlR0/ZWdlS0ptYWlQb0Va/Zy5qcGc",
-    "description": "A program designed to equip you with data analysis and machine learning skills focusing on computer science fundamentals."
+    "description": "A program designed to equip you with data analysis and machine learning skills focusing on computer science fundamentals.",
+    "button": "Data Science"
   },
   {
+    "id": 4,
     "title": "Cybersecurity Fundamentals",
     "image": "https://imgs.search.brave.com/cU4tCweiWzs3p52Fl1WOKTFhcv7gKA2t4urxuamaBws/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzAwLzgyLzMw/LzM2MF9GXzUwMDgy/MzA1Nl9QamdzY1ZX/Qk05d3hyNzdZYlR0/ZWdlS0ptYWlQb0Va/Zy5qcGc",
-    "description": "Learn the basics of cybersecurity and how to protect systems from threats focusing on computer science fundamentals."
+    "description": "Learn the basics of cybersecurity and how to protect systems from threats focusing on computer science fundamentals.",
+    "button": "Cybersecurity"
   },
   {
+    "id": 5,
     "title": "Web Development Bootcamp",
     "image": "https://imgs.search.brave.com/cU4tCweiWzs3p52Fl1WOKTFhcv7gKA2t4urxuamaBws/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzAwLzgyLzMw/LzM2MF9GXzUwMDgy/MzA1Nl9QamdzY1ZX/Qk05d3hyNzdZYlR0/ZWdlS0ptYWlQb0Va/Zy5qcGc",
-    "description": "A comprehensive course on web development, covering front-end and back-end technologies."
+    "description": "A comprehensive course on web development, covering front-end and back-end technologies.",
+    "button": "Web Dev"
   },
   {
+    "id": 6,
     "title": "Artificial Intelligence and Machine Learning",
     "image": "https://imgs.search.brave.com/cU4tCweiWzs3p52Fl1WOKTFhcv7gKA2t4urxuamaBws/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzAwLzgyLzMw/LzM2MF9GXzUwMDgy/MzA1Nl9QamdzY1ZX/Qk05d3hyNzdZYlR0/ZWdlS0ptYWlQb0Va/Zy5qcGc",
-    "description": "Deep dive into AI and ML technologies and their applications focusing on computer science fundamentals."
+    "description": "Deep dive into AI and ML technologies and their applications focusing on computer science fundamentals.",
+    "button": "AI & ML"
   }
 ]

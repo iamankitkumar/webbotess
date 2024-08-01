@@ -9,8 +9,6 @@ const Mca = () => {
       <div><Link to='/semTwo' >Sem 2</Link></div>
       <div><Link to='/semThree' >Sem 3</Link></div>
       <div><Link to='/semFour' >Sem 4</Link></div>
-    
-    
     </div>
   )
 }

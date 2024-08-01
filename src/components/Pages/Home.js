@@ -4,9 +4,25 @@ import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const navigate = useNavigate();
+  const handleButtonClick = (buttonValue) => {
+    // Define your routes based on button values
+    const routes = {
+      MCA: "/mca",
+      MMS: "/mms",
+      "Data Science": "/data-science",
+      Cybersecurity: "/cybersecurity",
+      "Web Dev": "/web-dev",
+      "AI & ML": "/ai-ml",
+     "BSC(CS)":"/bsc-cs"
+    };
 
-  const mcaPage = () => {
-    navigate("/mca");
+    // Navigate to the route based on button value
+    const route = routes[buttonValue];
+    if (route) {
+      navigate(route);
+    } else {
+      console.error("No route defined for button value:", buttonValue);
+    }
   };
 
   const [courses, setCourses] = useState([]);
@@ -14,11 +30,11 @@ const Home = () => {
   useEffect(() => {
     const fetchCourseData = async () => {
       try {
-        const response = await fetch('http://localhost:3001/Course-card');
+        const response = await fetch("http://localhost:3001/Course-card");
         const data = await response.json();
         setCourses(data);
       } catch (error) {
-        console.error('Error fetching course data:', error);
+        console.error("Error fetching course data:", error);
       }
     };
 
@@ -41,7 +57,12 @@ const Home = () => {
                 <div className="card_content">
                   <h2 className="card_title">{course.title}</h2>
                   <p className="card_text">{course.description}</p>
-                  <button className="btn card_btn" onClick={mcaPage}>MCA</button>
+                  <button
+                    className="btn card_btn"
+                    onClick={() => handleButtonClick(course.button)}
+                  >
+                    {course.button}
+                  </button>
                 </div>
               </div>
             </li>
