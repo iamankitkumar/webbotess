@@ -6,6 +6,11 @@ import About from './components/Pages/About';
 import Blog from './components/Pages/Blog';
 import Contact from './components/Pages/Contact';
 import Mca from "./components/Courses/Mca";
+import Mms from "./components/Courses/Mms";
+import SemOne from "./components/McaSems/SemOne";
+import SemTwo from "./components/McaSems/SemTwo";
+import SemThree from "./components/McaSems/SemThree";
+import SemFour from "./components/McaSems/SemFour";
 
 function App() {
   return (
@@ -20,6 +25,11 @@ function App() {
         <Route path="/blog" element={<Blog/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/mca" element={<Mca/>} />
+        <Route path="/mms" element={<Mms/>} />
+        <Route path="/semOne" element={<SemOne/>} />
+        <Route path="/semTwo" element={<SemTwo/>} />
+        <Route path="/semThree" element={<SemThree/>} />
+        <Route path="/semFour" element={<SemFour/>} />
         </Routes>
       </div>
   
