@@ -11,6 +11,10 @@ import SemOne from "./components/McaSems/SemOne";
 import SemTwo from "./components/McaSems/SemTwo";
 import SemThree from "./components/McaSems/SemThree";
 import SemFour from "./components/McaSems/SemFour";
+import MmsSemOne from "./components/MmsSems/MmsSemOne";
+import MmsSemTwo from "./components/MmsSems/MmsSemTwo";
+import MmsSemThree from "./components/MmsSems/MmsSemThree";
+import MmsSemFour from "./components/MmsSems/MmsSemFour";
 
 function App() {
   return (
@@ -30,6 +34,10 @@ function App() {
         <Route path="/semTwo" element={<SemTwo/>} />
         <Route path="/semThree" element={<SemThree/>} />
         <Route path="/semFour" element={<SemFour/>} />
+        <Route path="/mmsSemOne" element={<MmsSemOne/>} />
+        <Route path="/mmsSemTwo" element={<MmsSemTwo/>} />
+        <Route path="/mmSemThree" element={<MmsSemThree/>} />
+        <Route path="/mmsSemFour" element={<MmsSemFour/>} />
         </Routes>
       </div>
   
