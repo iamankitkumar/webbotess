@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Master of Computer Application",
+    "image": "https://imgs.search.brave.com/cU4tCweiWzs3p52Fl1WOKTFhcv7gKA2t4urxuamaBws/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzAwLzgyLzMw/LzM2MF9GXzUwMDgy/MzA1Nl9QamdzY1ZX/Qk05d3hyNzdZYlR0/ZWdlS0ptYWlQb0Va/Zy5qcGc",
+    "description": "This is a brief description of the course."
+  },
+  {
+    "title": "Bachelor of Science in Computer Science",
+    "image": "https://t3.ftcdn.net/jpg/05/31/08/72/360_F_531087216_GwBkAkrPIlXiuJRcJajovnrivUiyPdTf.jpg",
+    "description": "An undergraduate program focusing on computer science fundamentals."
+  },
+  {
+    "title": "Data Science and Analytics",
+    "image": "https://imgs.search.brave.com/cU4tCweiWzs3p52Fl1WOKTFhcv7gKA2t4urxuamaBws/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzAwLzgyLzMw/LzM2MF9GXzUwMDgy/MzA1Nl9QamdzY1ZX/Qk05d3hyNzdZYlR0/ZWdlS0ptYWlQb0Va/Zy5qcGc",
+    "description": "A program designed to equip you with data analysis and machine learning skills focusing on computer science fundamentals."
+  },
+  {
+    "title": "Cybersecurity Fundamentals",
+    "image": "https://imgs.search.brave.com/cU4tCweiWzs3p52Fl1WOKTFhcv7gKA2t4urxuamaBws/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzAwLzgyLzMw/LzM2MF9GXzUwMDgy/MzA1Nl9QamdzY1ZX/Qk05d3hyNzdZYlR0/ZWdlS0ptYWlQb0Va/Zy5qcGc",
+    "description": "Learn the basics of cybersecurity and how to protect systems from threats focusing on computer science fundamentals."
+  },
+  {
+    "title": "Web Development Bootcamp",
+    "image": "https://imgs.search.brave.com/cU4tCweiWzs3p52Fl1WOKTFhcv7gKA2t4urxuamaBws/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzAwLzgyLzMw/LzM2MF9GXzUwMDgy/MzA1Nl9QamdzY1ZX/Qk05d3hyNzdZYlR0/ZWdlS0ptYWlQb0Va/Zy5qcGc",
+    "description": "A comprehensive course on web development, covering front-end and back-end technologies."
+  },
+  {
+    "title": "Artificial Intelligence and Machine Learning",
+    "image": "https://imgs.search.brave.com/cU4tCweiWzs3p52Fl1WOKTFhcv7gKA2t4urxuamaBws/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzAwLzgyLzMw/LzM2MF9GXzUwMDgy/MzA1Nl9QamdzY1ZX/Qk05d3hyNzdZYlR0/ZWdlS0ptYWlQb0Va/Zy5qcGc",
+    "description": "Deep dive into AI and ML technologies and their applications focusing on computer science fundamentals."
+  }
+]

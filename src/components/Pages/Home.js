@@ -1,95 +1,55 @@
-import React, { useEffect } from 'react'
-import './Home.css'
-import { useNavigate } from 'react-router-dom'
-import axios from 'axios';
+import React, { useState, useEffect } from "react";
+import "./Home.css";
+import { useNavigate } from "react-router-dom";
+
 const Home = () => {
   const navigate = useNavigate();
-  const mcaPage = ()=>{
-    navigate('/mca');
-  }
 
-  useEffect (() =>{
-    axios.get('http://localhost:3001/Course-card').then(res =>{
-      console.log(res.data);
-    }) 
-  },[])
+  const mcaPage = () => {
+    navigate("/mca");
+  };
+
+  const [courses, setCourses] = useState([]);
+
+  useEffect(() => {
+    const fetchCourseData = async () => {
+      try {
+        const response = await fetch('http://localhost:3001/Course-card');
+        const data = await response.json();
+        setCourses(data);
+      } catch (error) {
+        console.error('Error fetching course data:', error);
+      }
+    };
+
+    fetchCourseData();
+  }, []);
 
   return (
     <div>
+      <h1>Courses</h1>
+      <ul className="cards">
+        {courses.length === 0 ? (
+          <p>Loading...</p>
+        ) : (
+          courses.map((course, index) => (
+            <li key={index} className="cards_item">
+              <div className="card">
+                <div className="card_image">
+                  <img src={course.image} alt={course.title} />
+                </div>
+                <div className="card_content">
+                  <h2 className="card_title">{course.title}</h2>
+                  <p className="card_text">{course.description}</p>
+                  <button className="btn card_btn" onClick={mcaPage}>MCA</button>
+                </div>
+              </div>
+            </li>
+          ))
+        )}
+      </ul>
+    </div>
+  );
+};
 
-      <div>
-
-      <div className="main">
-  <h1>Responsive Card Grid Layout</h1>
-  <ul className="cards">
-    <li className="cards_item">
-      <div className="card">
-        <div className="card_image"><img src="https://picsum.photos/500/300/?image=10" /></div>
-        <div className="card_content">
-          <h2 className="card_title">Card Grid Layout</h2>
-          <p className="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-          <button className="btn card_btn">MCA</button>
-        </div>
-      </div>
-    </li>
-    <li className="cards_item">
-      <div className="card">
-        <div className="card_image"><img src="https://picsum.photos/500/300/?image=5" /></div>
-        <div className="card_content">
-          <h2 className="card_title">Card Grid Layout</h2>
-          <p className="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-          <button className="btn card_btn">Read More</button>
-        </div>
-      </div>
-    </li>
-    <li className="cards_item">
-      <div className="card">
-        <div className="card_image"><img src="https://picsum.photos/500/300/?image=11" /></div>
-        <div className="card_content">
-          <h2 className="card_title">Card Grid Layout</h2>
-          <p className="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-          <button className="btn card_btn">Read More</button>
-        </div>
-      </div>
-    </li>
-    <li className="cards_item">
-      <div className="card">
-        <div className="card_image"><img src="https://picsum.photos/500/300/?image=14" /></div>
-        <div className="card_content">
-          <h2 className="card_title">Card Grid Layout</h2>
-          <p className="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-          <button className="btn card_btn">Read More</button>
-        </div>
-      </div>
-    </li>
-    <li className="cards_item">
-      <div className="card">
-        <div className="card_image"><img src="https://picsum.photos/500/300/?image=17" /></div>
-        <div className="card_content">
-          <h2 className="card_title">Card Grid Layout</h2>
-          <p className="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-          <button className="btn card_btn">Read More</button>
-        </div>
-      </div>
-    </li>
-    <li className="cards_item">
-      <div className="card">
-        <div className="card_image"><img src="https://picsum.photos/500/300/?image=2" /></div>
-        <div className="card_content">
-          <h2 className="card_title">Card Grid Layout</h2>
-          <p className="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-          <button className="btn card_btn">Read More</button>
-        </div>
-      </div>
-    </li>
-  </ul>
-</div>
-
-<h3 className="made_by">Made with ♡</h3>
-      </div>
-      </div>
-    
-  )
-}
-
-export default Home
+export default Home;
