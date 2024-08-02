@@ -1,9 +1,10 @@
 .navbar {
-  background-color: #1f5156;
+  background-color: #27dbec;
   height: 80px;
+  margin-left: 10px;
+  margin-right: 100px;
   display: flex;
   justify-content: center;
-  align-items: center;
   font-size: 1.2rem;
   position: sticky;
   top: 0;
