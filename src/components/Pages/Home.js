@@ -42,7 +42,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <div> 
       <h1>Courses</h1>
       <ul className="cards">
         {courses.length === 0 ? (

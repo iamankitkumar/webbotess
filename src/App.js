@@ -1,6 +1,6 @@
 import "./App.css";
 import NavBar from "./components/NavBar";
-import {  Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Home from './components/Pages/Home';
 import About from './components/Pages/About';
 import Blog from './components/Pages/Blog';
@@ -15,33 +15,36 @@ import MmsSemOne from "./components/MmsSems/MmsSemOne";
 import MmsSemTwo from "./components/MmsSems/MmsSemTwo";
 import MmsSemThree from "./components/MmsSems/MmsSemThree";
 import MmsSemFour from "./components/MmsSems/MmsSemFour";
+import Footer from "./components/Pages/Footer";
 
 function App() {
   return (
-  <>
-  
+    <>
+
       <NavBar />
 
       <div className="pages">
         <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/about" element={<About/>} />
-        <Route path="/blog" element={<Blog/>} />
-        <Route path="/contact" element={<Contact/>} />
-        <Route path="/mca" element={<Mca/>} />
-        <Route path="/mms" element={<Mms/>} />
-        <Route path="/semOne" element={<SemOne/>} />
-        <Route path="/semTwo" element={<SemTwo/>} />
-        <Route path="/semThree" element={<SemThree/>} />
-        <Route path="/semFour" element={<SemFour/>} />
-        <Route path="/mmsSemOne" element={<MmsSemOne/>} />
-        <Route path="/mmsSemTwo" element={<MmsSemTwo/>} />
-        <Route path="/mmSemThree" element={<MmsSemThree/>} />
-        <Route path="/mmsSemFour" element={<MmsSemFour/>} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/mca" element={<Mca />} />
+          <Route path="/mms" element={<Mms />} />
+          <Route path="/semOne" element={<SemOne />} />
+          <Route path="/semTwo" element={<SemTwo />} />
+          <Route path="/semThree" element={<SemThree />} />
+          <Route path="/semFour" element={<SemFour />} />
+          <Route path="/mmsSemOne" element={<MmsSemOne />} />
+          <Route path="/mmsSemTwo" element={<MmsSemTwo />} />
+          <Route path="/mmSemThree" element={<MmsSemThree />} />
+          <Route path="/mmsSemFour" element={<MmsSemFour />} />
         </Routes>
+
+        <Footer />
       </div>
-  
-</>
+
+    </>
   );
 }
 
